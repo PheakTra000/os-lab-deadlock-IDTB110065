@@ -16,7 +16,7 @@ Both scripts froze indefinitely due to a circular wait condition:
 Since neither process could release the lock it held until acquiring the other, both processes were stuck, creating a classic deadlock.  
 
 The `ps aux | grep sync_` command confirms that both scripts were still running but unable to make progress.
-![[Pasted image 20260323141801.png]]
+![](<images/Pasted image 20260323141801.png>)
 
 
 ### Observation Checkpoint 3: Multiplayer Deadlock
@@ -30,7 +30,7 @@ This caused a **deadlock**: neither script could proceed or release its lock.
 By simulating two users locking each other’s resources, this demonstrates a distributed denial-of-service scenario where the system becomes unresponsive due to resource contention.
 
 - player A
-![[Pasted image 20260323145302.png]]
+![](<images/Pasted image 20260323145302.png>)
 
 - player B
-![[Pasted image 20260323145947.png]]
+![](<images/Pasted image 20260323145947.png>)
