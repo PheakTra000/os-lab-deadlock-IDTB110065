@@ -3,7 +3,7 @@
 The `df -h | grep loop` output shows that the virtual disk image files are successfully attached as loopback devices (e.g., /dev/loop71 and /dev/loop72) and mounted into the file system.
 
 This proves that the system recognizes the image files as usable storage devices, similar to physical disks, and they are now accessible through their respective mount points.
-![Alt text](20260323133747.png)
+![Alt text](./images/20260323133747.png)
 
 
 
